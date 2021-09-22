@@ -1,0 +1,14 @@
+{
+  "name": "@alex-schuster/defrost",
+  "version": "0.0.0",
+  "description": "Rendering and reading a web app's state via shared templates.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  },
+  "author": "Alexander Schuster",
+  "license": "MIT"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@alex-schuster/defrost-project",
+  "version": "0.0.0",
+  "description": "Rendering and reading a web app's state via shared templates.",
+  "workspaces": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alexander Schuster",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.2.0",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "globals": {
+      "ts-jest": {
+        "useESM": true
+      }
+    },
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ]
+  }
+}
