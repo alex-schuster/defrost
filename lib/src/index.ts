@@ -11,7 +11,7 @@ import { render, renderNode } from './renderer/index';
 function init(element: Element, template: string): object {
   const domParser = new DOMParser();
   const templateDocument = domParser.parseFromString(template, 'text/html');
-  const data = parseNode(templateDocument.firstElementChild, element);
+  const data = parseNode(element, templateDocument.firstElementChild);
   const unpackedData = unpackData(data);
   return new Proxy(unpackedData, {
     set: (o, property, value) => {
