@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const create = require('../src/create');
+const version = require('../src/version');
+
+program
+  .command('version')
+  .alias('v')
+  .description('get the defrost-cli version')
+  .action(() => {
+    version.logVersion();
+  });
+
+program
+  .command('create <name>')
+  .description('create a new project')
+  .action((name) => {
+    create.createProject(name);
+  });
+
+program.parse(process.argv);

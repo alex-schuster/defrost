@@ -1,0 +1,17 @@
+{
+  "name": "@alex-schuster/defrost-cli",
+  "version": "0.0.0",
+  "description": "A command line tool for Defrost project development.",
+  "main": "bin/defrost",
+  "bin": {
+    "defrost": "bin/defrost"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "commander": "^8.2.0",
+    "fs-extra": "^10.0.0"
+  },
+  "license": "MIT"
+}
